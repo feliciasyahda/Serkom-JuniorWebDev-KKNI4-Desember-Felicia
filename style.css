@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F4F4F9; /* Warna lembut sesuai dengan main-content */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #A71C1C; /* Warna utama Universitas Telkom */
+}
+
+.navbar a {
+    color: #FFFFFF !important;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.navbar .form-control {
+    max-width: 300px;
+}
+
+/* Main content */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #F4F4F9;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #A71C1C; /* Warna teks utama */
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #333;
+}
+
+.content {
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Search bar styling */
+.form-inline input[type="search"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-inline button {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    color: #A71C1C;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Form elements */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Gaya untuk form button-container agar tombol terpusat dan berdampingan */
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Memastikan tombol sejajar secara vertikal */
+    gap: 20px; /* Jarak antar tombol */
+    margin-top: 10px; /* Memberikan sedikit jarak antara form input dan tombol */
+}
+
+/* Gaya untuk tombol submit dan button */
+input[type="submit"], input[type="button"] {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Padding lebih lebar agar tombol tidak terlalu kecil */
+    cursor: pointer;
+    border-radius: 4px;
+    width: auto; /* Lebar yang lebih konsisten */
+    height: 50px; /* Menetapkan tinggi tombol */
+    font-size: 16px; /* Menyesuaikan ukuran font */
+    text-align: center; /* Memastikan teks berada di tengah */
+}
+
+/* Efek hover pada tombol submit dan button */
+input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #a10000;
+}
+
+/* Footer */
+footer {
+    background-color: #A71C1C;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Tidak fixed agar mendukung flexbox */
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
